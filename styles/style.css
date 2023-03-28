@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@400;600&display=swap');
+
+:root {
+  /* Primary colors */
+  --primary-color: hsl(257, 40%, 49%);
+  --secondary-color: hsl(300, 69%, 71%);
+  --font-color: #fff;
+
+  --primary-font: 'Poppins', sans-serif;
+  --secondary-font: 'Open Sans', sans-serif;
+}
+
+body {
+  background-image: url('../images/bg-mobile.svg');
+  background-color: var(--primary-color);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  color: var(--font-color);
+  font-size: 16px;
+}
+
+.header {
+  padding: 0em 2em;
+}
+
+.header__logo {
+  width: 50%;
+  margin: 2.5em 0;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  gap: 3em;
+  padding: 0 2em;
+  margin-bottom: 2em;
+}
+
+.main__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 2em;
+}
+
+.content__title,
+.content__text {
+  line-height: 1.5em;
+}
+
+.content__title {
+  font-family: var(--primary-font);
+  font-size: 1.5em;
+  font-weight: 600;
+}
+
+.content__text {
+  font-family: var(--primary-font);
+}
+
+.content__button {
+  color: var(--primary-color);
+  font-family: var(--secondary-font);
+  background-color: var(--font-color);
+  padding: 0.7em 5em;
+  border-radius: 1em;
+  text-decoration: none;
+  box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.5);
+}
+
+.content__button:hover {
+  background-color: var(--secondary-color);
+  color: var(--font-color);
+  transition: 0.7s;
+}
+
+.footer__social {
+  padding: 2em 2em;
+  display: flex;
+  justify-content: center;
+  gap: 1.5em;
+}
+
+.footer__item a {
+  border: 1px solid var(--font-color);
+  padding: 0.5em;
+  border-radius: 50%;
+}
+
+.footer__item a:hover {
+  border: 1px solid var(--secondary-color);
+  color: var(--secondary-color);
+  transition: 0.5s;
+  background-color: var(--secondary-color);
+}
+
+@media (min-width: 1024px) {
+  body {
+    background-image: url(../images/bg-desktop.svg);
+  }
+
+  .header__logo {
+    width: 20%;
+  }
+
+  .main {
+    flex-direction: row;
+    padding: 0 3em;
+  }
+
+  .main__content {
+    padding-top: 2em;
+    text-align: left;
+    align-items: flex-start;
+  }
+
+  .content__title {
+    font-size: 3em;
+  }
+
+  .content__text,
+  .content__button {
+    font-size: 1.2em;
+  }
+
+  .footer__social {
+    justify-content: flex-end;
+  }
+}
+
+@media (min-width: 1770px) {
+  .main {
+    height: 70%;
+    padding: 0 7em;
+  }
+
+  .content__title {
+    font-size: 3.5em;
+  }
+
+  .content__text,
+  .content__button {
+    font-size: 1.5em;
+  }
+}
