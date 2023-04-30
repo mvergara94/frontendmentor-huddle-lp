@@ -27,7 +27,7 @@ Users should be able to:
 
 ### Screenshot
 
-<img src="https://i.imgur.com/LkpHlGX.png" alt=" screenshot of the screen ">
+<img src="https://i.imgur.com/qFNy8Nt.png" alt=" screenshot of the screen ">
 
 
 ### Links
